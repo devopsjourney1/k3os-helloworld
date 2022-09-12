@@ -1,3 +1,14 @@
 k3os: {}
 sshAuthorizedKeys:
 - github:devopsjourney1
+
+k3os:
+  dns_nameservers:
+  - 1.1.1.1
+  - 8.8.8.8
+  server_url: https://someserver:6443
+  labels:
+    region: us-west-1
+  k3s_args:
+  - server
+  - "--cluster-init"
